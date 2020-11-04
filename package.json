@@ -3,17 +3,27 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "www": "node ./bin/www",
+    "lint": "semistandard",
+    "lint-fix": "semistandard --fix"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
-    "debug": "^4.2.0",
+    "debug": "^4.3.0",
     "express": "^4.17.1",
     "http-errors": "^1.8.0",
     "jade": "^1.11.0",
-    "mongoose": "^5.10.10",
+    "mongoose": "^5.10.11",
     "mongoose-currency": "^0.2.0",
     "morgan": "^1.10.0"
-  }
+  },
+  "devDependencies": {
+    "semistandard": "^16.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+        "./node_modules/semistandard/eslintrc.json"
+    ]
+}
 }

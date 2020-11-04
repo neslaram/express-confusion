@@ -16,7 +16,7 @@ const url = 'mongodb://localhost:27017/confusion';
 const connect = mongoose.connect(url);
 
 connect.then(() => {
-  console.log("Connected correctly to server");
+  console.log('Connected correctly to server');
 }, (err) => { console.log(err); });
 
 const app = express();
