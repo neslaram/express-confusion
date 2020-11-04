@@ -23,7 +23,7 @@
   },
   "eslintConfig": {
     "extends": [
-        "./node_modules/semistandard/eslintrc.json"
+      "./node_modules/semistandard/eslintrc.json"
     ]
-}
+  }
 }
